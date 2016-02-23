@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/group_details_layout">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/profile_frame">
+
+            <com.facebook.login.widget.ProfilePictureView
+                android:id="@+id/group_details_item_thumbnail_image_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center_vertical">
+            </com.facebook.login.widget.ProfilePictureView>
+
+            <ImageView
+                android:id="@+id/android"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/subtracted_circle"
+                android:contentDescription="@null" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon"
+                android:id="@+id/message_button"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/white"
+                android:layout_marginRight="32dp"/>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/group_details_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="72dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="16dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/group_details_item_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/group_details_item_subhead_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
